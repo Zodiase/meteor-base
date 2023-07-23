@@ -6,6 +6,7 @@ printf "\n[-] Installing Meteor application server NPM dependencies...\n\n"
 
 cd $APP_BUNDLE_FOLDER/bundle/programs/server/
 npm install
+npm install fibers@4
 
 if [[ "$1" = '--build-from-source' ]]; then
 	npm rebuild --build-from-source
